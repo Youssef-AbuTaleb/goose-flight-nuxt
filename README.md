@@ -1,5 +1,8 @@
 # Goose Travel Agency
 
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Click%20Here-brightgreen)](https://goose-flight.netlify.app/)
+
+
 ## Description:
 
 - This website helps users search for and book flight tickets.
