@@ -15,35 +15,37 @@ interface Link {
 import Logo from "../GeneralComponents/logo.vue";
 import FooterLinks from "./footer-links.vue";
 
+const { t } = useI18n();
+
 const footerLinks = [
   {
-    title: "About",
+    title: t("footer.links.about.title"),
     links: [
-      { name: "About GooseFlight", href: "#" },
-      { name: "How it works", href: "#" },
-      { name: "Blog", href: "#" },
-      { name: "Forum", href: "#" },
+      { name: t("footer.links.about.about"), href: "#" },
+      { name: t("footer.links.about.how"), href: "#" },
+      { name: t("footer.links.about.blog"), href: "#" },
+      { name: t("footer.links.about.forum"), href: "#" },
     ],
     extraButtons: null,
   },
   {
-    title: "Support",
+    title: t("footer.links.support.title"),
     links: [
-      { name: "Help Center", href: "#" },
-      { name: "Contact us", href: "#" },
-      { name: "Privacy policy", href: "#" },
-      { name: "Terms of service", href: "#" },
-      { name: "Trust and safety", href: "#" },
-      { name: "Accessibility", href: "#" },
+      { name: t("footer.links.support.help"), href: "#" },
+      { name: t("footer.links.support.contactUs"), href: "#" },
+      { name: t("footer.links.support.privacyPolicy"), href: "#" },
+      { name: t("footer.links.support.terms"), href: "#" },
+      { name: t("footer.links.support.safety"), href: "#" },
+      { name: t("footer.links.support.accessibility"), href: "#" },
     ],
     extraButtons: null,
   },
   {
-    title: "Get the app",
+    title: t("footer.links.getApp.title"),
     links: [
-      { name: "Tripma for Android", href: "#" },
-      { name: "Tripma for iOS", href: "#" },
-      { name: "Mobile site", href: "#" },
+      { name: t("footer.links.getApp.android"), href: "#" },
+      { name: t("footer.links.getApp.ios"), href: "#" },
+      { name: t("footer.links.getApp.mobileSite"), href: "#" },
     ],
     extraButtons: [GoogleStoreButton, AppleStoreButton],
   },

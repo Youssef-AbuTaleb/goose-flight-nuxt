@@ -1,8 +1,8 @@
 <template>
   <div class="dest">
-    <h2 class="dest__title">Popular Destinations</h2>
+    <h2 class="dest__title">{{ $t("popularDest.title") }}</h2>
     <h3 class="dest__subtitle">
-      Vacations to make your experience enjoyable in Indonesia!
+      {{ $t("popularDest.subTitle") }}
     </h3>
     <div class="dest__cards">
       <DestinationCard
@@ -25,37 +25,39 @@ import destTwoImg from "../../assets/imgs/dest-2.png";
 import destThreeImg from "../../assets/imgs/dest-3.png";
 import destFourImg from "../../assets/imgs/dest-4.png";
 
+const { t } = useI18n();
+
 const destinations = [
   {
     imgSrc: destOneImg,
-    location: "Manggarai Barat",
-    title: "Flores Road Trip 3D2N",
-    duration: "3 Days",
-    price: "$375",
+    location: t("popularDest.destinations.destOne.location"),
+    title: t("popularDest.destinations.destOne.title"),
+    duration: t("popularDest.destinations.destOne.duration"),
+    price: t("popularDest.destinations.destOne.price"),
     alt: "destination 1",
   },
   {
     imgSrc: destTwoImg,
-    location: "Bogor",
-    title: "Forrester Glamping Co Bogor",
-    duration: "1 Days",
-    price: "$375",
+    location: t("popularDest.destinations.destTwo.location"),
+    title: t("popularDest.destinations.destTwo.title"),
+    duration: t("popularDest.destinations.destTwo.duration"),
+    price: t("popularDest.destinations.destTwo.price"),
     alt: "destination 2",
   },
   {
     imgSrc: destThreeImg,
-    location: "Jakarta",
-    title: "Paket Tiket Pesawat Jakarta Bali",
-    duration: "",
-    price: "$375",
+    location: t("popularDest.destinations.destThree.location"),
+    title: t("popularDest.destinations.destThree.title"),
+    duration: t("popularDest.destinations.destThree.duration"),
+    price: t("popularDest.destinations.destThree.price"),
     alt: "destination 3",
   },
   {
     imgSrc: destFourImg,
-    location: "Kota Semarang",
-    title: "Desa Wisata Kandri",
-    duration: "14 Days",
-    price: "$375",
+    location: t("popularDest.destinations.destFour.location"),
+    title: t("popularDest.destinations.destFour.title"),
+    duration: t("popularDest.destinations.destFour.duration"),
+    price: t("popularDest.destinations.destFour.price"),
     alt: "destination 4",
   },
 ];

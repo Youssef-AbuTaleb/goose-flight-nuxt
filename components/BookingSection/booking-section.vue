@@ -7,40 +7,42 @@ import departureIcon from "../../assets/icons/departure.svg";
 import calendarIcon from "../../assets/icons/calendar.svg";
 import seatIcon from "../../assets/icons/seat.svg";
 
+const { t } = useI18n();
+
 const inputsData = [
   {
     id: "departure",
     type: "text",
     icon: departureIcon,
-    label: "From",
-    placeholder: "Flight from?",
+    label: t("bookingForm.from"),
+    placeholder: t("bookingForm.fromPlaceholder"),
   },
   {
     id: "arrival",
     type: "text",
     icon: arrivalIcon,
-    label: "To",
-    placeholder: "Where to?",
+    label: t("bookingForm.to"),
+    placeholder: t("bookingForm.toPlaceholder"),
   },
   {
     id: "depart-date",
     type: "date",
     icon: calendarIcon,
-    label: "Depart",
+    label: t("bookingForm.depart"),
     placeholder: "DD/MM/YYYY",
   },
   {
     id: "arrive-date",
     type: "date",
     icon: calendarIcon,
-    label: "Return",
+    label: t("bookingForm.return"),
     placeholder: "DD/MM/YYYY",
   },
   {
     id: "class-travelers",
     type: "dropdown",
     icon: seatIcon,
-    label: "Cabin Class & Travelers",
+    label: t("bookingForm.class"),
     placeholder: "",
   },
 ];
@@ -49,8 +51,16 @@ const inputsData = [
 <template>
   <form class="booking" @submit.prevent>
     <div class="trip-radio">
-      <RadioButton name="trip-type" id="one-way" label="One Way" />
-      <RadioButton name="trip-type" id="two-way" label="Two Way" />
+      <RadioButton
+        name="trip-type"
+        id="one-way"
+        :label="$t('bookingForm.oneWay')"
+      />
+      <RadioButton
+        name="trip-type"
+        id="two-way"
+        :label="$t('bookingForm.roundTrip')"
+      />
     </div>
 
     <div class="line" />

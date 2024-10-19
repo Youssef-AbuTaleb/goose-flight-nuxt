@@ -11,8 +11,11 @@ export default defineI18nConfig(() => ({
       bookingForm: {
         oneWay: "One Way",
         roundTrip: "Round Trip",
-        from: "Trom",
+        from: "From",
         to: "To",
+        fromPlaceholder: "Flight from?",
+        toPlaceholder: "Where to?",
+
         depart: "Depart",
         return: "Return",
         class: "Cabin Class & Travelers",
@@ -67,6 +70,7 @@ export default defineI18nConfig(() => ({
             contactUs: "Contact us",
             terms: "Terms of service",
             safety: "Trust and safetty",
+            privacyPolicy: "Privacy policy",
             accessibility: "Accessibility",
           },
           getApp: {
@@ -89,6 +93,8 @@ export default defineI18nConfig(() => ({
         roundTrip: "ذهاب وعودة",
         from: "من",
         to: "إلى",
+        fromPlaceholder: "من أين؟",
+        toPlaceholder: "إلى أين؟",
         depart: "المغادرة",
         return: "العودة",
         class: "درجة المقصورة والمسافرون",
@@ -117,7 +123,7 @@ export default defineI18nConfig(() => ({
           destThree: {
             location: "جاكرتا",
             title: "استكشاف العاصمة",
-            duration: "غير محدد",
+            duration: "",
             price: "$375",
           },
           destFour: {
@@ -143,6 +149,7 @@ export default defineI18nConfig(() => ({
             contactUs: "اتصل بنا",
             terms: "شروط الخدمة",
             safety: "الثقة والأمان",
+            privacyPolicy: "سياسة الخصوصية",
             accessibility: "سهولة الوصول",
           },
           getApp: {

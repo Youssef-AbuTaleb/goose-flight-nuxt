@@ -1,16 +1,18 @@
 <script lang="ts" setup>
+const { t } = useI18n();
+
 const activeIndex = 0;
 const links = [
   {
-    label: "home",
+    label: t("header.links.home"),
     href: "#",
   },
   {
-    label: "promo",
+    label: t("header.links.promo"),
     href: "#",
   },
   {
-    label: "my booking",
+    label: t("header.links.booking"),
     href: "#",
   },
 ];

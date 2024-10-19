@@ -16,12 +16,11 @@
     <BookingDropdown
       v-if="type === 'dropdown'"
       :options="[
-        { label: '1 adult, Economy', value: '1' },
-        { label: '2 adult, Class', value: '2' },
-        { label: '2 adult, Economy', value: '3' },
+        { label: $t('bookingForm.classOptions.economyOne'), value: '1' },
+        { label: $t('bookingForm.classOptions.classTwo'), value: '2' },
+        { label: $t('bookingForm.classOptions.economyTwo'), value: '3' },
       ]"
-      placeholder="1 adult, Economy"
-      @option-selected="(option) => console.log(option)"
+      :placeholder="$t('bookingForm.classOptions.economyOne')"
     />
   </div>
 </template>

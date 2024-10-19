@@ -1,7 +1,10 @@
 <template>
   <div class="footer-links__container">
     <div class="footer-links__col" v-for="col in linksData">
-      <div class="footer-links__links">
+      <div
+        class="footer-links__links"
+        :class="{ 'footer-links__links--ar': locale === 'ar' }"
+      >
         <p class="footer-links__title">{{ col.title }}</p>
         <a
           :href="link.href"
@@ -28,5 +31,7 @@ interface Link {
   name: string;
   href: string;
 }
+
+const { locale } = useI18n();
 defineProps<{ linksData: LinksData[] }>();
 </script>

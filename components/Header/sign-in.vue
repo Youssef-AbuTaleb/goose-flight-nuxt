@@ -1,3 +1,8 @@
 <template>
-  <button class="button">Sign in</button>
+  <button class="button">{{ $t("header.signIn") }}</button>
 </template>
+
+<!-- <script setup>
+const { locale, setLocale } = useI18n();
+setLocale("ar");
+</script> -->
