@@ -1,75 +1,24 @@
-# Nuxt 3 Minimal Starter
+# Goose Travel Agency
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+## Description:
 
-## Setup
+- This website helps users search for and book flight tickets.
+- The site supports multiple languages, allowing users to switch between English and Arabic.
+- The header includes a logo, navigation links, a language switch button, and a sign-in button.
+- The booking section allows users to input their trip details, including destination, location, departure/arrival dates, flight class, and the number of travelers.
+- The "Popular Destinations" section showcases popular trips, with each card displaying the trip's location, title, duration, and price.
+- Lastly, the footer includes the logo and various useful links related to the website.
 
-Make sure to install the dependencies:
 
-```bash
-# npm
-npm install
+## Necessary Pages:
+1. HomePage English "/en"
+2. HomePage Arabic "/ar"
 
-# pnpm
-pnpm install
 
-# yarn
-yarn install
+## Used Technologies:
+- Nuxt.JS
+- Styling: Sass and Bem, sass folder struture.
+- Internationalization: Nuxti18n
 
-# bun
-bun install
-```
 
-## Development Server
 
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
