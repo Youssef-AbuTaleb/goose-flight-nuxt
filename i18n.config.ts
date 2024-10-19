@@ -31,25 +31,25 @@ export default defineI18nConfig(() => ({
         destinations: {
           destOne: {
             location: "Manggarai Barat",
-            title: "",
+            title: "Flores Road Trip 3D2N",
             duration: "3 Days",
             price: "$375",
           },
           destTwo: {
             location: "Bogor",
-            title: "",
+            title: "Forrester Glamping Co Bogor",
             duration: "1 Days",
             price: "$375",
           },
           destThree: {
             location: "Jakarta",
-            title: "",
+            title: "Paket Tiket Pesawat Jakarta Bali",
             duration: "",
             price: "$375",
           },
           destFour: {
             location: "Kota Semarang",
-            title: "",
+            title: "Desa Wisata Kandri",
             duration: "14 Days",
             price: "$375",
           },
