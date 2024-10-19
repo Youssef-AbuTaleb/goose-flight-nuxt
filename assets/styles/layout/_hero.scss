@@ -1,0 +1,27 @@
+.hero {
+  display: flex;
+  justify-content: center;
+  background-image: url("~/assets/imgs/world.png");
+  object-fit: cover;
+  height: 71.2rem;
+  margin-bottom: -34rem;
+  padding-top: 12.1rem;
+
+  &__text {
+    font-family: "Playfair Display", serif;
+    font-size: 5.6rem;
+    font-weight: 700;
+    line-height: 8.4rem;
+    text-align: center;
+    max-width: 79rem;
+
+    // background: linear-gradient(
+    //   to right,
+    //   $color-secondary,
+    //   $color-primary
+    // ); // Gradient colors
+    background: linear-gradient(93.37deg, #183867 28.05%, #eaa121 44.33%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
