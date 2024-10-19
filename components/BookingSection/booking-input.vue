@@ -13,8 +13,9 @@
       :placeholder="placeholder"
     />
 
-    <BookingDropdown
+    <CustomDropdown
       v-if="type === 'dropdown'"
+      icon="family"
       :options="[
         { label: $t('bookingForm.classOptions.economyOne'), value: '1' },
         { label: $t('bookingForm.classOptions.classTwo'), value: '2' },
@@ -26,7 +27,7 @@
 </template>
 
 <script setup lang="ts">
-import BookingDropdown from "./booking-dropdown.vue";
+import CustomDropdown from "./custom-dropdown.vue";
 
 defineProps({
   id: { type: String, required: false },

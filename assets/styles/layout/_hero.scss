@@ -19,9 +19,11 @@
     -webkit-text-fill-color: transparent;
   }
   @media only screen and (max-width: 800px) {
-    margin-bottom: -54rem;
+    padding-top: 0;
+    margin-bottom: -64rem;
 
     &__text {
+      max-width: 90%;
       font-size: 2.4rem;
       line-height: 3.36rem;
     }

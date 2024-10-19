@@ -12,7 +12,11 @@
         @click="selectOption(option)"
         :class="{ selected: option.value === selectedOption?.value }"
       >
-        <img src="../../assets/icons/family.svg" alt="family icon" />
+        <img
+          v-if="icon === 'family'"
+          src="../../assets/icons/family.svg"
+          alt="family icon"
+        />
         <span>
           {{ option.label }}
         </span>
@@ -33,6 +37,7 @@ export default {
       type: String,
       default: "Select an option",
     },
+    icon: { type: String, required: false },
   },
   data() {
     return {

@@ -15,7 +15,6 @@ export default defineI18nConfig(() => ({
         to: "To",
         fromPlaceholder: "Flight from?",
         toPlaceholder: "Where to?",
-
         depart: "Depart",
         return: "Return",
         class: "Cabin Class & Travelers",

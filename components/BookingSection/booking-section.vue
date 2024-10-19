@@ -6,6 +6,7 @@ import arrivalIcon from "../../assets/icons/arrival.svg";
 import departureIcon from "../../assets/icons/departure.svg";
 import calendarIcon from "../../assets/icons/calendar.svg";
 import seatIcon from "../../assets/icons/seat.svg";
+import CustomDropdown from "./custom-dropdown.vue";
 
 const { t } = useI18n();
 
@@ -62,6 +63,15 @@ const inputsData = [
         :label="$t('bookingForm.roundTrip')"
       />
     </div>
+    <div class="trip-dropdown">
+      <CustomDropdown
+        :options="[
+          { label: $t('bookingForm.oneWay'), value: '1' },
+          { label: $t('bookingForm.roundTrip'), value: '2' },
+        ]"
+        :placeholder="$t('bookingForm.oneWay')"
+      />
+    </div>
 
     <div class="line" />
 
@@ -76,7 +86,8 @@ const inputsData = [
       />
 
       <button class="button button-search">
-        <img src="../../assets//icons/search.svg" alt="search icon" />
+        <img src="../../assets/icons/search.svg" alt="search icon" />
+        <span class="button-search__text-mobile">Search</span>
       </button>
     </div>
   </form>
