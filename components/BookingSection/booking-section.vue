@@ -87,7 +87,9 @@ const inputsData = [
 
       <button class="button button-search">
         <img src="../../assets/icons/search.svg" alt="search icon" />
-        <span class="button-search__text-mobile">Search</span>
+        <span class="button-search__text-mobile">{{
+          $t("bookingForm.search")
+        }}</span>
       </button>
     </div>
   </form>
