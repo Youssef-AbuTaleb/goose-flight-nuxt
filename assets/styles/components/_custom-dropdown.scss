@@ -1,12 +1,12 @@
 .custom-dropdown {
   position: relative;
   width: 232px;
-  font-family: Arial, sans-serif;
+  font-weight: 300;
+  color: $color-secondary;
 }
 
 .selected-option {
   padding: 10px;
-  /* border: 1px solid #ccc; */
   border-radius: 8px;
   cursor: pointer;
   display: flex;
@@ -28,8 +28,6 @@
   left: 0;
   right: 0;
   background-color: white;
-  /* border: 1px solid #ccc; */
-  /* border-top: none; */
   border-radius: 8px;
   list-style-type: none;
   padding: 0;
@@ -37,16 +35,17 @@
   max-height: 200px;
   overflow-y: auto;
   z-index: 1;
+  box-shadow: 0px 4px 6px -2px $color-shadow;
 }
 
 .options-list li {
   padding: 10px;
   cursor: pointer;
-  border-top: 1px solid #88909917;
+  border-top: 1px solid $color-shadow;
 }
 
 .options-list li:hover {
-  background-color: #f0f0f0;
+  background-color: $color-grey-1;
 }
 
 .options-list li.selected {
