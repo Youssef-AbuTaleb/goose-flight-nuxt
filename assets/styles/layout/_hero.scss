@@ -14,14 +14,16 @@
     line-height: 8.4rem;
     text-align: center;
     max-width: 79rem;
-
-    // background: linear-gradient(
-    //   to right,
-    //   $color-secondary,
-    //   $color-primary
-    // ); // Gradient colors
     background: linear-gradient(93.37deg, #183867 28.05%, #eaa121 44.33%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+  }
+  @media only screen and (max-width: 800px) {
+    margin-bottom: -54rem;
+
+    &__text {
+      font-size: 2.4rem;
+      line-height: 3.36rem;
+    }
   }
 }
