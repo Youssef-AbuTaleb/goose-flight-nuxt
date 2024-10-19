@@ -17,6 +17,7 @@ export default defineI18nConfig(() => ({
         toPlaceholder: "Where to?",
         depart: "Depart",
         return: "Return",
+        search: "search",
         class: "Cabin Class & Travelers",
         classOptions: {
           economyOne: "1 adult, Economy",
@@ -96,6 +97,7 @@ export default defineI18nConfig(() => ({
         toPlaceholder: "إلى أين؟",
         depart: "المغادرة",
         return: "العودة",
+        search: "بحث",
         class: "درجة المقصورة والمسافرون",
         classOptions: {
           economyOne: "بالغ واحد، الدرجة الاقتصادية",
