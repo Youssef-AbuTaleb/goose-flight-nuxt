@@ -16,12 +16,22 @@
   }
 
   .line {
-    position: absolute;
+    // position: absolute;
     border: 1px solid #eaa121;
-    width: 80%;
+    opacity: 0.2;
+    width: 92%;
     left: 50%;
-    transform: translateX(-50%);
+    text-align: center;
+    margin: 0 auto;
+    // transform: translateX(-50%);
     opacity: 0.2px;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
+  }
+  .trip-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2.4rem;
+    gap: 6.4rem;
   }
 }

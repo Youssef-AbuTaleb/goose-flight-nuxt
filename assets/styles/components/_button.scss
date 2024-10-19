@@ -16,6 +16,14 @@
   }
 }
 
+.button-search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 6.4rem;
+  height: 4.8rem;
+}
+
 .button-apple,
 .button-google {
   border: none;

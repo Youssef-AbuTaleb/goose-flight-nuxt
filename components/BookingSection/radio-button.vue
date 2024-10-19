@@ -1,6 +1,12 @@
 <template>
   <div class="radio-group">
-    <input type="radio" class="radio-input" :id="id" :name="name" />
+    <input
+      type="radio"
+      class="radio-input"
+      :id="id"
+      :name="name"
+      :checked="true"
+    />
     <label :for="id" class="radio-label">
       <span class="radio-button"></span>
       {{ label }}
