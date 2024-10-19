@@ -1,0 +1,23 @@
+.button {
+  & {
+    border: none;
+    cursor: pointer;
+    color: $color-white;
+    background-color: $color-primary;
+    font-family: "Montserrat", serif;
+    font-weight: 600;
+    padding: 1.2rem 2.4rem;
+    border-radius: 0.8rem;
+    transition: all 0.2s;
+  }
+
+  &:hover {
+    background-color: $color-primary-light;
+  }
+}
+
+.button-apple,
+.button-google {
+  border: none;
+  cursor: pointer;
+}

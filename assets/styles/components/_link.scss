@@ -1,0 +1,21 @@
+.link {
+  &,
+  &:link,
+  &:visited {
+    text-transform: capitalize;
+    text-decoration: none;
+    font-family: "Montserrat", serif;
+    text-align: left;
+    color: $color-grey-4;
+    transition: all 0.2s;
+  }
+
+  &:hover {
+    color: $color-primary-light;
+  }
+
+  &.active {
+    font-weight: 700;
+    color: $color-primary;
+  }
+}
